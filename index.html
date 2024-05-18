@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,6 @@
         <h3>ENTERTAINMENT</h3>
         <h3>
             SPORTS
-            <?xml version="1.0" ?><svg fill="none" width="28" height="22" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </h3>
         <span id="search">
             <?xml version="1.0" ?><svg width="25" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
@@ -46,106 +46,107 @@
         </span>
     </div>
     <div id="imagecontainer">
-        <div class="imagecontainers" id="image1">
-            <img src="https://cdn.pixabay.com/photo/2014/01/18/10/14/vaulted-cellar-247391_1280.jpg" alt="vaulted-cellar" >
-            <span class="Cultured1 buttons">Culture</span>
+        <div class="imagecontainers blogcard" id="image1">
+            <img id="imgelem1">
+            <span class="Cultured1 buttons" id="type1"></span>
             <span class="Featured1 buttons">Featured</span>
-            <p class="head head1">
-                Lost texts from Mt.Vesuvius eruption deciphered with new AI.
+            <p class="head head1" id="head1">
                 <br>
                 <?xml version="1.0" ?><svg width="30" height="20" fill="#cccccc" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                October 18, 2022.
             </p>
-            <span> 
-            </span>
         </div>
-        <div class="imagecontainers" id="image2">
-            <img src="https://cdn.pixabay.com/photo/2019/01/24/21/27/pyramids-3953368_1280.jpg" alt="pyramids" >
-            <span class="Cultured1 buttons">Culture</span>
+        
+        <div class="imagecontainers blogcard" id="image2">
+            <img id="imgelem2">
+            <span class="Cultured1 buttons" id="type2"></span>
             <span class="Featured1 buttons">Featured</span>
-            <p class="head head1">
-                Mysterious L-shaped structure discovered near Giza Pyramids.
+            <p class="head head1" id="head2">
                 <br>
                 <?xml version="1.0" ?><svg width="30" height="20" fill="#cccccc" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                October 18,2022.
+            </p>    
+        </div>
+        
+        <div class="imagecontainers blogcard" id="image3">
+            <img id="imgelem3">
+            <span class="Cultured2 buttons" id="type3"></span>
+            <span class="Featured2 buttons">Featured</span>
+            <p class="head head2" id="head3">  
+                <br>
+                <?xml version="1.0" ?><svg width="30" height="20" fill="#cccccc" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
             </p>
         </div>
-        <div class="imagecontainers" id="image3">
-            <img src="https://cdn.pixabay.com/photo/2017/03/27/12/45/woman-2178480_1280.jpg" alt="woman" >
-            <span class="Cultured2 buttons">Culture</span>
+        
+        <div class="imagecontainers blogcard" id="image4">
+            <img id="imgelem4">
+            <span class="Cultured2 buttons" id="type4"></span>
             <span class="Featured2 buttons">Featured</span>
-            <p class="head head2">
-                India won the international award for the best cultural country.
+            <p class="head head2" id="head4">
                 <br>
                 <?xml version="1.0" ?><svg width="30" height="20" fill="#cccccc" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                October 18, 2022.
-            </p>
-        </div>
-        <div class="imagecontainers" id="image4">
-            <img src="https://cdn.pixabay.com/photo/2023/03/28/18/28/hieroglyph-7883891_1280.jpg" alt="hieroglyph" >
-            <span class="Cultured2 buttons">Culture</span>
-            <span class="Featured2 buttons">Featured</span>
-            <p class="head head2">
-                Gobekli Tepe reveals new 11,000-year-old finds
-                <br>
-                <?xml version="1.0" ?><svg width="30" height="20" fill="#cccccc" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                October 18, 2022
             </p>  
         </div>
 
         <aside id="aside">
             <span id="latest">Latest</span><span id="popular">Popular</span>
-            <div class="asideimages">
-                <img src="https://cdn.pixabay.com/photo/2012/10/26/01/19/papyrus-63004_1280.jpg" alt="" class="scrollimgelements">
-                <p class="scrollheaders">
-                    AI making 2,000-year-old scrolls readable again. 
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem5">
+                <p class="scrollheaders" id="head5">
                     <br>
-                    
                     <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                    October 20, 2022
                 </p>
             </div>
-            <div class="asideimages">
-                <img src="https://cdn.pixabay.com/photo/2017/04/19/14/14/homo-erectus-2242425_1280.jpg" alt="" class="scrollimgelements">
-                <p class="scrollheaders">
-                    Mysterious L-shaped structure discovered near Giza Pyramids.
+            
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem6">
+                <p class="scrollheaders" id="head6">
                     <br>
-                    
                     <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                    October 20, 2022
                 </p>
             </div>
-            <div class="asideimages">
-                <img src="https://cdn.pixabay.com/photo/2019/01/24/21/27/pyramids-3953368_1280.jpg" alt="" class="scrollimgelements">
-                <p class="scrollheaders">
-                    Gobekli Tepe reveals new 11,000-year-old finds.
+            
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem7">
+                <p class="scrollheaders" id="head7">
                     <br>
-                    
                     <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                    October 20, 2022
                 </p>
             </div>
-            <div class="asideimages">
-                <img src="https://cdn.pixabay.com/photo/2020/05/31/19/53/light-bulb-5244001_1280.jpg" alt="" class="scrollimgelements">
-                <p class="scrollheaders">
-                    The rise of sustainable seafood: Benefits and challenges.
+            
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem8">
+                <p class="scrollheaders" id="head8">
                     <br>
-                    
                     <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                    October 20, 2022
                 </p>
             </div>
-            <div class="asideimages">
-                <img src="https://cdn.pixabay.com/photo/2012/10/26/01/19/papyrus-63004_1280.jpg" alt="" class="scrollimgelements">
-                <p class="scrollheaders">
-                    AI making 2,000-year-old scrolls readable again.
+            
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem9">
+                <p class="scrollheaders" id="head9">
                     <br>
-                    
                     <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
-                    October 20, 2022
                 </p>
+            </div>
+            
+            <div class="asideimages blogcard">
+                <img class="scrollimgelements" id="imgelem10">
+                <p class="scrollheaders" id="head10">
+                    <br>
+                    <?xml version="1.0" ?><svg fill="#444" width="25" height="18" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
+                </p>
+                <span>
+                </span>
             </div>
         </aside>
+    </div>
+    <div id="box">
+        <span id="cross">X</span>
+        <img src="" alt="" id="boximg" height="300" width="350">
+        <p id="heartButton" class="heart-button">
+            <span class="heart-icon">&#10084;</span>
+        </p>
+        <p id="boxcontent"></p>
+
     </div>
 </body>
 </html>

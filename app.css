@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 /*Heading style*/
 h1{ 
     color:#fffafa;
@@ -230,3 +233,53 @@ img{
     font-family:'Roboto Slab',sans-serif;
     padding:0.6rem;
 }
+/*Heart style*/
+.heart-button {
+    position: absolute;
+    top:5%;
+    right:1%;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    width:30px;
+    height:40px;
+    padding: 0;
+  }
+  .heart-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  .heart-button.active .heart-icon {
+    color: #fd095a;
+  }
+  /*Box style*/
+  .blogcard{
+    cursor: pointer;
+  }
+  #box{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    top:0;
+    height:100vh;
+    width:100%;
+    margin:0 auto;
+    z-index: 2;
+    background: black;
+  }
+  #cross{
+    color: #f7f7f7;
+    cursor: pointer;
+  }
+  #boximg{
+    height:500px;
+    width: 550px;
+  }
+  #boxcontent{
+    color:#f0f0f0;
+    font-size:20px;
+    font-family:'Roboto Slab';
+  }
